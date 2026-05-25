@@ -32,7 +32,7 @@ export const MainRouter = createBrowserRouter([
 
             },
             {
-                path:"/save",
+                path:"/saved",
                 element:<Save />
             }
         ]

@@ -61,6 +61,7 @@
                     }
     
                 }
+                
            }
             
         }
@@ -89,6 +90,13 @@
                     color: white;
                     transform: scale(0.95);
                 }
+            }
+            .saved{
+                background-color: rgba(255, 99, 71, 0.92);
+                color: white;
+                border: none;
+
+                
             }
         }
     }

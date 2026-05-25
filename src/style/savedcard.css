@@ -1,0 +1,90 @@
+.save-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.saved-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 30%;
+
+    .top{
+        display: flex;
+  
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        img{
+            width: 100%;
+        }
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+
+            h4{
+                font-size: 1.2rem;
+                font-family: f1;
+                padding: 0;
+                margin: 0;
+            }
+
+            button{
+                padding: 0.3rem 2rem;
+                width: fit-content;
+                font-size: 1rem;
+                border:  1px solid black;
+                border-radius: 3px;
+                margin: 0;
+                background-color: rgba(255, 99, 71, 0.92);
+
+                &:hover{
+                    color: white;
+                    cursor: pointer;
+                }
+                &:active{
+                    color: white;
+                    transform: scale(0.95);
+                }
+            }
+        }
+
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            padding: 0.2rem 1rem;
+            width: fit-content;
+            font-size: 1rem;
+            border:  1px solid black;
+            border-radius: 3px;
+            margin: 0;
+            background-color: transparent;
+
+            &:hover{
+                color: white;
+                cursor: pointer;
+                background-color: rgba(255, 99, 71, 0.92);
+            }
+            &:active{
+                color: white;
+                transform: scale(0.95);
+            }
+            i{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

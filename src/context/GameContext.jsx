@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
 export const GameDataContext = createContext()
 
@@ -6,7 +6,13 @@ export const GameDataContext = createContext()
 
 const GameContext = ({children}) => {
 
-    const [save, setSave] = useState([])
+    const [save, setSave] = useState(
+        JSON.parse(localStorage.getItem("save") || "[]")
+    )
+    
+    useEffect(() => {
+        localStorage.setItem("save",JSON.stringify(save))
+    },[save])
 
     const addToSave = (game) => {
         setSave((prev) => {

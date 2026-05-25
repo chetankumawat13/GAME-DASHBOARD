@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "../style/card.css"
 import { useNavigate } from 'react-router'
+import  { GameDataContext } from '../context/GameContext';
 
 const Card = ({item}) => {
 
     const navigate = useNavigate();
+    const {addToSave,save} = useContext(GameDataContext)
+    const isSaved = save.some((game) => game.id === item.id)
 
   return (
     <div className='card'>
@@ -19,7 +22,7 @@ const Card = ({item}) => {
         </div>
         <div className="bottom">
                 <button onClick={() => navigate(`/details/${item.id}`)}>details</button>
-                <button><i className="ri-bookmark-line"></i></button>
+                <button className={isSaved ? "saved" : ""} onClick={() => addToSave(item)}><i className="ri-bookmark-line"></i></button>
         </div>
     </div>
   )
