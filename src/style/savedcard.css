@@ -88,3 +88,23 @@
         }
     }
 }
+
+
+
+@media (max-width: 768px){
+    .saved-card{
+        width: 100%;
+        gap: 1rem;
+
+        .bottom{
+            button{
+                
+                i{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    
+}

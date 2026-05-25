@@ -96,9 +96,37 @@
                 color: white;
                 border: none;
 
-                
+
             }
         }
     }
 
+}
+
+@media (max-width: 768px){
+    .cards{
+        gap: 1rem;
+        margin-top: 0;
+        .card{
+            width: 100%;
+            .top{
+                .title{
+                    h4{
+                        font-size: 1rem;
+                    }
+                    button{
+                        padding: 0.2rem 1rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .bottom{
+                button{
+                    padding: 0.2rem 1rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    
 }

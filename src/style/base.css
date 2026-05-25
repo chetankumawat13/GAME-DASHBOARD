@@ -27,5 +27,12 @@ html, body {
 .maincontant{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 93%;
+}
+
+@media (max-width: 768px) {
+    .maincontant{
+        width: 80%;
+    }
+    
 }
