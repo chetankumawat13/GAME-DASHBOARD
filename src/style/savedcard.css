@@ -108,3 +108,20 @@
 
     
 }
+
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .saved-card{
+        width: 48%;
+        gap: 1rem;
+
+        .bottom{
+            button{
+                
+                i{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

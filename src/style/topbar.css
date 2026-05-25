@@ -53,3 +53,20 @@
     }
     
 }
+
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .top-bar{
+        height: 12%;
+        border: 1.5px solid black;
+        border-left: none;
+        .search{
+            padding: 0rem 2rem;
+            input{
+                width: 85%;
+                border: 1.5px solid black;
+                padding-left: 1rem;
+            }
+        }
+    }
+}

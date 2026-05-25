@@ -89,3 +89,38 @@ a.active{
         gap: 0.5rem;
     }
 }
+
+
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .navbar{
+        width: 15%;
+        border: 1px solid black;
+
+        .navlinks{
+            gap: 0.5rem;
+    
+            .navlink{
+                font-size: 1.2rem;
+    
+                i{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .navbottom{
+            gap: 0.5rem;
+    
+            .navlink{
+                font-size: 1.2rem;
+    
+                i{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    
+}

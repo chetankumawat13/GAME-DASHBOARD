@@ -38,3 +38,21 @@
 
     
 }
+
+
+/* laptop */
+/* Tablet only */
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .buttons{
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+
+        button{
+            padding: 0.3rem 0.8rem;
+            font-size: 1.2rem;
+        }
+    }
+
+}
