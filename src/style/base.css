@@ -30,6 +30,18 @@ html, body {
     width: 93%;
 }
 
+.tech{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 87vh;
+
+    img{
+        width: 50%;
+    }
+}
+
 @media (max-width: 768px) {
     .maincontant{
         width: 80%;

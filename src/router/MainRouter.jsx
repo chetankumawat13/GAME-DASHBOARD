@@ -4,6 +4,7 @@ import MainLayout from "../layout/MainLayout";
 import  { categoryLoader, gameDetailsLoader, gameLoader } from "../services/gameLoader";
 import Details from "../pages/Details";
 import Save from "../pages/Save";
+import Tech from "../components/Tech";
 
 export const MainRouter = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ export const MainRouter = createBrowserRouter([
             {
                 path:"/saved",
                 element:<Save />
+            },
+            {
+                path:"/*",
+                element:<Tech />
             }
         ]
     }
